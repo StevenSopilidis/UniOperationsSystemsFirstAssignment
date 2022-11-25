@@ -37,7 +37,7 @@ int main() {
             waitpid(pid, NULL, 0);
             printf("%d \n", getpid()); // p0 prints its pid
             printf("\n\n\n Core for project1: ");            
-            char* args[] = {"/bin/cat", "/mnt/c/csstuff/os_erg1/erg1.c", NULL};
+            char* args[] = {"/bin/cat", "./erg1.c", NULL};
             execve("/bin/cat", args, NULL);
         }
     }
